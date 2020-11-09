@@ -1,11 +1,9 @@
-FROM --platform=$TARGETPLATFORM gists/libtorrent-rasterbar:latest
+FROM gists/libtorrent-rasterbar:latest
 
-ARG VERSION
+ARG VERSION=4.3.0.1
 
 ENV PEER_PORT=6881 \
-    WEB_PORT=8080 \
-    UID=1000 \
-    GID=1000
+    WEB_PORT=8080
 
 RUN set -ex && \
     apk add --no-cache su-exec && \
