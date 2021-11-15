@@ -1,6 +1,6 @@
 FROM gists/libtorrent-rasterbar:latest
 
-ARG VERSION=4.3.0.1
+ARG VERSION=4.3.9
 
 ENV PEER_PORT=6881 \
     WEB_PORT=8080
